@@ -1,0 +1,44 @@
+html
+{
+    background: 
+    background: #27AEA8;
+    background: -webkit-linear-gradient(right, #27AEA8, #FFDF84);
+    background: -moz-linear-gradient(right, #27AEA8, #FFDF84);
+    background: linear-gradient(to left, #27AEA8, #FFDF84);;
+}
+
+#label2
+{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin-top: 90;
+}
+script
+{
+    padding-left: 70;
+}
+#label1
+{
+    padding: 450;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #edf556;
+    font-size: 40px
+}
+
+#label3
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    color:rgb(55, 172, 133);
+}
+#label4
+{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    font-size: large;
+    color:rgb(55, 172, 133);
+}
+
+#body2
+{
+    padding-left: 90px;
+}

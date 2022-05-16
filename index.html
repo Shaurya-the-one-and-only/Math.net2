@@ -1,0 +1,108 @@
+
+<html>
+<head>
+    <body>
+        <header Math.net></header>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <label id="label1">Math.net</label>
+        <br>
+        <br>
+        <label id="label2">Math isnt that easy for some people but on Math.net, that will change. From formulas to calculators to little tricks that can not only help you with your math but will make you feel smart again. Thats why you should choose Math.net. Sure you could find websites with calculators but would you be abe to see the formulas and have a calculator at the same time? The answer is simple, no. Math.net is a one of a kind website which allows you to use a calulator while looking at the formula for it. Say that you have a hard question which you dont know the answer but it requires a formula. This is why the genius inventors working with me and myself created Math.net, a formula and calculator website in one!</label>
+        <br>
+        <br>
+        <br>
+	<script id="script">
+        
+		//function that display value
+		function dis(val)
+		{
+			document.getElementById("result").value+=val
+		}
+		
+		//function that evaluates the digit and return result
+		function solve()
+		{
+			let x = document.getElementById("result").value
+			let y = eval(x)
+			document.getElementById("result").value = y
+		}
+		
+		//function that clear the display
+		function clr()
+		{
+			document.getElementById("result").value = ""
+		}
+	</script>
+	<!-- for styling -->
+	<style>
+		.title{
+		margin-bottom: 10px;
+		text-align:center;
+		width: 210px;
+		color:rgb(55, 172, 133);
+		border: solid black 2px;
+		}
+
+		input[type="button"]
+		{
+		background-color:rgb(252, 241, 98);
+		color: black;
+		border: solid black 2px;
+		width:100%
+		}
+
+		input[type="text"]
+		{
+		background-color:white;
+		border: solid black 2px;
+		width:100%
+		}
+	</style>
+</head>
+<!-- create table -->
+<body>
+	<div id="div1"class = title >Calculator</div>
+	<table border="1">
+		<tr>
+			<td colspan="3"><input type="text" id="result"/></td>
+			<!-- clr() function will call clr to clear all value -->
+			<td><input type="button" value="c" onclick="clr()"/> </td>
+		</tr>
+		<tr>
+			<!-- create button and assign value to each button -->
+			<!-- dis("1") will call function dis to display value -->
+			<td><input type="button" value="1" onclick="dis('1')"/> </td>
+			<td><input type="button" value="2" onclick="dis('2')"/> </td>
+			<td><input type="button" value="3" onclick="dis('3')"/> </td>
+			<td><input type="button" value="/" onclick="dis('/')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" onclick="dis('4')"/> </td>
+			<td><input type="button" value="5" onclick="dis('5')"/> </td>
+			<td><input type="button" value="6" onclick="dis('6')"/> </td>
+			<td><input type="button" value="-" onclick="dis('-')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" value="7" onclick="dis('7')"/> </td>
+			<td><input type="button" value="8" onclick="dis('8')"/> </td>
+			<td><input type="button" value="9" onclick="dis('9')"/> </td>
+			<td><input type="button" value="+" onclick="dis('+')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" value="." onclick="dis('.')"/> </td>
+			<td><input type="button" value="0" onclick="dis('0')"/> </td>
+			<!-- solve function call function solve to evaluate value -->
+			<td><input type="button" value="=" onclick="solve()"/> </td>
+			<td><input type="button" value="*" onclick="dis('*')"/> </td>
+		</tr>
+	</table>
+<br>
+    <label id="label3">Formula for a triangle</label>
+    <br>
+    <p id="paragraph1"> 1. The total sum of all the triangle angles is 180° (° = degrees). <br> 2. The three types of triangles are Iscoceles, Equilateral and Right angle triangle. <br> 3. The formula to find the area of a triangle is (Base x Width) divided by 2. <br> 4. The formula for finding the hypotonuse of a triangle is c² = the square root of a² + b². <br> 5. The formula for finding the peremiter of a triangle is a + b + c. <br> 6. An Iscoceles triangle only havs two sides that are equal. <br> 7. An Equilateral triangle means that all its sides are the same length. <br> 8. A Right angled triangle means that the there are to sides put together in such a way that the inside angle created is equal to 90°.</p>
+    <br>
+    <br>
+    <label id="label4">Formulas for a circle</label>
+    <p id="paragraph2"> 1. The formula for finding the area of a circle is ℼr² (ℼ = 3.14 or 22/7) <br> 2. The formula for the peremiter of a circle is 2ℼr. <br></p>
+</body>
+</html>
